@@ -4,14 +4,60 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylus.css">
 </head>
 
 <body>
 
-    <h2>Sobre Nós</h2>
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <img class="img-responsive" src="img/empresa.jpg">
 
-    <img class="img-responsive" src="img/empresa.jpg">
+    <div class="panel-group" id="paineis-sobre">
 
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" data-toggle="collapse" data-parent="#paineis-sobre"
+                    data-target="#primeiro-p">Desde 1935</h3>
+            </div>
+            <div id="primeiro-p" class="collapse in">
+                <div class="panel-body">
+                    <p>A TopCasaFina bla bla bla bla</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" data-toggle="collapse" data-parent="#paineis-sobre"
+                     data-target="#seg-p">Preços</h3>
+            </div>
+            <div  id="seg-p" class="collapse in">
+                <div class="panel-body">
+                    <p>A TopCasaFina bla bla bla bla</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" data-toggle="collapse" data-parent="#paineis-sobre"
+                     data-target="#ter-p">Saiba mais</h3>
+            </div>
+            <div id="ter-p" class="collapse in">
+                <div class="panel-body">
+                    <p>A TopCasaFina bla bla bla bla</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    </div>
+    
+
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
