@@ -2,3 +2,12 @@
 {
     margin-top: 20px;
 }
+
+.titulo-depoimentos {
+    background-color: #0275D8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color:#FFF;
+    margin-bottom: 0;
+    font-size: 24 px;
+}
