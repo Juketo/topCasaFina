@@ -162,52 +162,63 @@
     </div>
 </section>
 
-<section>
-        <h2>Contato</h2>
-        <p>Entre em contato conosco</p>
+<section class="container">
+		<h2>Contato</h2>
+		<h4>Entre em contato conosco</h4>
 
-    <form>
-        <div class="form-group">
-            <label for="contato-name"> Nome:</label>
-            <input class="form-control" id="contato-name" type="text" 
-                   placeholder="Seu nome">
-        </div>    
+		<form>
+			<div class="form-group">
+				<label for="contato-nome">Nome:</label>
+				<input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
+			</div>
 
-        <div class="form-group">
-            <label for="contato-email">Email</label>
-            <div class="input-group">
-                    <div class="input-group-addon">@</div>
-                    <input type="email" class="form-control" id="contato-email"
-                    placeholder="Seu email">
-            </div>
-        </div>
-  
-    <div class="grupo-radio">
-        <div class="radio">
-            <label>
-                <input type="radio" name="tipo-pessoa" checked> 
-                Pessoa Física
-            </label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" name="tipo-pessoa"> 
-                Pessoa Jurídica
-            </label>
-        </div>
-    </div><!--
-    
-   --><select class="contato-select form-control" name="tipo-solicitacao">
-        <option disabled selected>Tipo de Situação</option>
-        <option>Casa</option>
-        <option>Apartamento</option>
-        <option>Mansão</option>
-    </select>
+			<div class="form-group">
+				<label for="contato-email">E-mail:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+	      	<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+      	</div>
+			</div>
 
-    <button class="btn btn-primary" type="submit">Enviar</button>
-    
-    </form>
-</section>
+			<div class="grupo-radio">
+				<div class="radio">
+					<label>
+						<input type="radio" name="tipo-pessoa" value="fisica" checked>
+						Pessoa física
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="tipo-pessoa" value="juridica">
+						Pessoa jurídica
+					</label>
+				</div>
+			</div><!--
+
+			--><select class="contato-select form-control" name="tipo-solicitacao">
+				<option value="" disabled selected>Tipo de solicitação</option>
+			  <option value="casa">Casa</option>
+			  <option value="apartamento">Apartamento</option>
+			  <option value="mansao">Mansão</option>
+			</select>
+
+			<button type="submit" class="btn btn-primary">Enviar</button>
+
+		</form>
+	</section>
+
+<footer>
+    <address>
+        <strong>TopCasaFina Arquitetura</strong><br>
+        Rua Vergueiro, 3185, Vila Mariana<br>
+        São Paulo, SP<br>
+        Tel: (11) 5571-2751 ou 5083-3884
+    </address>
+    <address>
+        Email: contato.topcasafina@alura.com.br
+    </address>
+</footer>
     
 <script src="jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
