@@ -1,0 +1,110 @@
+http://getbootstrap.com/
+baixa framework para raíz do projeto
+lá tem muita documentação intuitiva de como usar tal coisa
+
+simular tela mobile no chrome
+CTRL SHIFT J -> do lado de Elements, ícone 2 retângulos
+lá da pra simular tela do iphone, samgung, etc
+
+-----------------------
+
+Auto-ajusta para tamanho da tela de cada celular
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+img responsive se auto adapta à tela
+<img class="img-responsive" src="img/empresa.jpg">
+
+-----------------------
+
+o javascript do bootstrap precisa de jquery
+https://jquery.com/download/
+Download the compressed, production jQuery x.xxx.xx
+
+no html
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+O data-toggle serve para identificar qual ação será executada. 
+O data-target serve para identificar em qual elemento ocorrerá a ação.
+
+-----------------------
+
+* HTML 5 - semânticas para divs:
+
+figure: tag que foi criada no HTML5 para trazer mais semântica para tags <img> 
+com legendas.
+
+figcaption
+
+section: separa seções
+
+* Bootstrap
+
+jumbotron: estilo placar/propaganda
+thumbsnail: foto e texto em baixo
+
+* documentação do Bootstrap
+
+Na tab components podemos achar componentes reutilizáveis criados pelo bootstrap.
+
+Na tab CSS temos configurações globais do CSS e elementos HTML fundamentais 
+estilizados pelo CSS. Também temos o sistema de grid que será abordado mais à frente.
+
+Na tab JS temos components que utilizam javascript e também a documentação 
+de javascript do bootstrap.
+
+carousel: passagem de imagens tipo G1
+
+-----------------------
+
+'Você gostaria que essa imagem fosse indexada pelo Google e aparecesse no Google Images?'
+
+Provavelmente as imagens que gostaríamos que o Google indexasse seriam as imagens de título 
+do nosso site, nossos produtos e coisas do tipo.
+
+Se esse não é o caso, a imagem é decorativa apenas.
+
+Imagens decorativas são inseridas através do CSS pela propriedade background. Imagens de 
+conteúdo são inseridas através do HTML pela tag <img>.
+
+-----------------------
+
+Para definirmos a altura em porcentagem do nosso <header> ou de alguma Tag do HTML, o que 
+é necessário definir a altura para todas as tags pais dela, ou seja, não apenas do <body> 
+e do <html>
+
+-----------------------
+
+Visual Studio Code
+CTRL D + D (cada repetição): para editar o texto em cada variável repetida
+
+-----------------------
+
+Grid auto-ajustável para diferentes resoluções:
+Basta acumular os cols:
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/residencia-ludi.png" alt="Foto da Casa Castelo">
+    </figure>
+</div>
+
+
+1) col-xs-* é para dispositivos extra small, ou seja, bem pequenos tais como smartphones.
+2) col-sm-* é para dispositivos small, ou seja, apenas pequenos tais como tablets e celulares 
+maiores deitados.
+3) col-md-* é para dispositivos médios, tais como tablets maiores e monitores pequenos.
+4) col-lg-* é para dispositivos large, ou seja, grandes, tais como computadores desktop com 
+monitores grandes.
+
+XS : < 768px, SM : >= 768px, MD : >= 992px, LG : >= 1200px
+É importante saber para quando formos escrever nossas media queries e se quisermos que 
+elas acompanhem os ajustes de tamanho do bootstrap.
+
+-----------------------
+
+Para alterar stylos conforme a dimensão da tela:
+@media(min-width: 768px) {
+	#paineis-sobre {
+		margin-top: 0;	
+	}
+}
